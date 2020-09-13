@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>guru.springframework</groupId>
-    <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.5</version>
-
-    <modules>
-        <module>pet-clinic-data</module>
-        <module>pet-clinic-web</module>
-    </modules>
-
     <packaging>pom</packaging>
-
-    <name>sfg-pet-clinic</name>
-    <description>SFG Pet Clinic Project</description>
-
+    <modules>
+        <module>Pet-Clinic-Data</module>
+        <module>Pet-Clinic-Web</module>
+    </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.0.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <groupId>guru.springframework</groupId>
+    <artifactId>sfg-pet-clinic</artifactId>
+    <version>0.0.5</version>
+    <name>sfg-pet-clinic</name>
+    <description>SFG Pet Clinic Project</description>
 
     <properties>
-        <start-class>guru.springframework.sfgpetclinic.SfgPetClinicApplication</start-class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
         <jaxb.version>2.3.0</jaxb.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <start-class>guru.springframework.sfgpetclinic.SfgPetClinicApplication</start-class>
     </properties>
 
     <dependencies>
@@ -98,10 +94,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:springframeworkguru/sfg-pet-clinic.git</developerConnection>
-        <tag>sfg-pet-clinic-0.0.8</tag>
+        <tag>sfg-pet-clinic-0.0.5</tag>
     </scm>
 
 </project>
-
-
-
