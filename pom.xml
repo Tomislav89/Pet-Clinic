@@ -94,7 +94,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Tomislav89/Pet-Clinic.git</developerConnection>
-        <tag>sfg-pet-clinic-0.0.22</tag>
+        <tag>sfg-pet-clinic-0.0.31</tag>
     </scm>
 
 </project>
