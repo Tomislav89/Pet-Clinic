@@ -92,8 +92,8 @@
     </build>
 
     <scm>
-        <!--<developerConnection>scm:git:git@github.com:Tomislav89/Pet-Clinic.git</developerConnection>-->
-        <developerConnection>scm:git:https://github.com/ximanta/Pet-Clinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/Tomislav89/Pet-Clinic.git</developerConnection>
+        <!--developerConnection>scm:git:https://github.com/ximanta/Pet-Clinic.git</developerConnection-->
         <tag>sfg-pet-clinic-0.0.6</tag>
     </scm>
 
