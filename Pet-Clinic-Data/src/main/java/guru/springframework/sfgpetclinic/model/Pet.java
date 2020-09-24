@@ -2,11 +2,16 @@ package guru.springframework.sfgpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet{
 
+    private Long Id;
     private PetType petType;
     private Owner owner;
     private LocalDate birthday;
+
+    public Long getId() {
+        return Id;
+    }
 
     public PetType getPetType() {
         return petType;
