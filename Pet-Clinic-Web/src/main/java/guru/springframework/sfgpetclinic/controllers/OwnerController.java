@@ -3,7 +3,7 @@ package guru.springframework.sfgpetclinic.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import services.OwnerService;
+import guru.springframework.sfgpetclinic.services.OwnerService;
 
 @RequestMapping("/owners")
 @Controller
