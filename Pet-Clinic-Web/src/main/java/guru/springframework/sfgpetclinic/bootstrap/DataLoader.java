@@ -2,6 +2,7 @@ package guru.springframework.sfgpetclinic.bootstrap;
 import guru.springframework.sfgpetclinic.model.*;
 import guru.springframework.sfgpetclinic.services.PetTypeService;
 import guru.springframework.sfgpetclinic.services.SpecialityService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import guru.springframework.sfgpetclinic.services.OwnerService;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 @Component
 public class DataLoader implements CommandLineRunner {
 
+    @Qualifier("springdatajpa")
     private final OwnerService ownerService;
     private final VetService vetService;
     private final PetTypeService petTypeService;
