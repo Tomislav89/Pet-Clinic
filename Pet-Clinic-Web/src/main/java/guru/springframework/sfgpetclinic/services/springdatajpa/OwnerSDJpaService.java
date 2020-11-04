@@ -16,6 +16,7 @@ import java.util.Set;
 /**
  * Created by jt on 8/5/18.
  */
+@Service
 @Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
 
