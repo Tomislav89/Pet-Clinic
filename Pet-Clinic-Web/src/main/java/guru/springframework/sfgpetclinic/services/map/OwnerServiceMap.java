@@ -31,18 +31,18 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
     }
 
     @Override
-    public void delete(Owner object) {
-        super.delete(object);
+    public void delete(Owner owner) {
+        super.delete(owner);
     }
 
     @Override
-    public Owner save(Owner object) {
+    public Owner save(Owner owner) {
         //ako objekt nije null
-        if(object != null){
+        if(owner != null){
             //dohvati hashset Pets i provjeri da nije null, ako nije null onda:
-            if (object.getPets() != null) {
+            if (owner.getPets() != null) {
                 //iteriraj kroz hashset
-                object.getPets().forEach(pet -> {
+                owner.getPets().forEach(pet -> {
                     //dohvati pet iz hasgseta i te getaj type i provjeri da nije null, ako  nije null:
                     if (pet.getPetType() != null){
                         // jos za dodatnu provjeru pogledaj dal je id null, ako je null onda:
@@ -62,7 +62,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
                     }
                 });
             }
-            return super.save(object);
+            return super.save(owner);
 
         } else {
             return null;
