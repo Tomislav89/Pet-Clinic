@@ -18,6 +18,9 @@ import java.util.Set;
  */
 @Service
 @Profile("springdatajpa")
+
+// koristimo ovaj tip profila umjesto da spremamo podatke u hashmap, već da spremamo u sql database za orm
+
 public class OwnerSDJpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;

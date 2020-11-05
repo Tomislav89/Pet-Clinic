@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @Component
 public class DataLoader implements CommandLineRunner {
 
-    @Qualifier("springdatajpa")
+//    @Qualifier("springdatajpa")
     private final OwnerService ownerService;
     private final VetService vetService;
     private final PetTypeService petTypeService;
