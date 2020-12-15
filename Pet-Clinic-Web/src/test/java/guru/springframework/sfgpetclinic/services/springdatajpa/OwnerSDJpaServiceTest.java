@@ -98,6 +98,7 @@ class OwnerSDJpaServiceTest {
         assertNotNull(savedOwner);
 
         verify(ownerRepository).save(any());
+
     }
 
     @Test
